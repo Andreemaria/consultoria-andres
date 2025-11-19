@@ -19,7 +19,8 @@
 
 <body>
 
-    <header id="header" class="header justify-content-between align=">
+    <header id="header" class="header fixed-top">
+
 
         <nav class="navbar navbar-expand-lg bg-primary">
 
@@ -27,7 +28,7 @@
             <div class="container">
 
                 <!-- Marca -->
-
+                <a class="navbar-brand  text-bg-primary" href="#">Andres Acessorias</a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,7 +43,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">Sobre</a>
-                            <i class="bi bi-pc-display-horizontal"></i>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#servicos">Serviços</a>
@@ -58,6 +59,70 @@
 
     </header>
 
+    <!-- HERO -->
+
+    <section id="hero" class="hero">
+
+
+        
+
+        <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+            <!-- SLIDE 1 / FOTO 1 -->
+            <div class="carousel-item active text-center">
+
+                <img src="/img/hero/slide 1.jpg" alt="">
+
+                <div class="carousel-conteiner">
+                    <h2> Soluções inteligentes para decisões melhores </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium repudiandae optio
+                        illum dolor. Doloribus laboriosam consequatur tempora debitis vel provident eos ex aliquid
+                        eveniet voluptate, cum iste atque eaque?
+                    </p>
+
+                </div>
+
+                <!-- SLIDE 2 -->
+                <div class="carousel-item text-center">
+                    <img src="img/hero/slide 2.jpg" alt="Negocios em equipe">
+                    <div class="carousel-conteiner">
+                        <h2> Mente em Ação </h2>
+                        <P>
+                        </P>
+
+                    </div>
+
+                    <!-- SLIDE 3 -->
+                    <div class="carousel-item text-center">
+                        <img src="img/hero/slide 2.jpg" alt="Negocios em equipe">
+                        <div class="carousel-conteiner">
+                            <h2> Mente em Ação </h2>
+                            <P>
+                            </P>
+
+                            <div>
+
+                            </div>
+
+                            <!-- Botoes de navegação -->
+                            <!-- Voltar -->
+
+                            <a href="#hero-carousel" role="button" class="carousel-control-prev">
+                                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                            </a>
+
+
+                            <a href="#hero-carousel" role="button" class="carousel-control-prev">
+                                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                            </a>
+                            </a>
+
+                            <ol class="carousel-indicators">
+
+                            </ol>
+
+    </section>
 
     <!-- Todas as Seçoes -->
 
@@ -71,17 +136,179 @@
 
     <!-- Sobre Mim / Sobre a Marca/Produto -->
     <section class="about" id="about">
+        <div class="container">
+            <!-- Centralizar o Conteúdo  -->
+
+
+            <div class="row">
+
+
+                <div class="container text-center mt-7">
+                    <h1>Acessoria aos Micros e Pequenas Empresas</h1>
+                    <p class="lead">Ser reconhecida como referência nacional em assessoria operacional pela eficiência,
+                        inovação e comprometimento com os resultados de nossos clientes.</p>
+
+
+                </div>
+
+                <!-- Estrutura Imagem -->
+                <div class="col-lg-5">
+                    <img src="/img/sobre.png" alt="reunião com a equipe" loading="lazy" class="img-fluid">
+                </div>
+
+                <!-- Estruturas dos Textos / Descrição  -->
+                <div class="col-lg-7 coluna">
+                    <h3>Sobre Nós</h3>
+                    <p>
+                        A <strong>Andres Acessoria Operacional</strong> é uma empresa especializada em oferecer soluções
+                        estratégicas e
+                        práticas para otimizar processos, reduzir custos e aprimorar a eficiência operacional das
+                        organizações.
+                        Com uma equipe experiente e multidisciplinar, atuamos lado a lado com nossos clientes para
+                        transformar desafios em resultados sustentáveis.
+
+                        Nosso propósito é tornar as operações corporativas mais inteligentes, ágeis e rentáveis,
+                        ajudando
+                        empresas de diferentes segmentos a alcançar a excelência operacional.
+
+                    </p>
+
+                    <p class="mb-0">
+                        <em>
+                            Apoiar empresas na melhoria contínua de seus processos operacionais, garantindo maior
+                            produtividade, controle e rentabilidade.
+                        </em>
+                    </p>
+                </div>
+
+                <ul class="list-unstyled mt-4">
+                    <li class="d-flex mb-3">
+
+                        <!-- <i class="bi bi-globe-americas text-primary fs-3 me-3"></i> -->
+                        <i class="bi bi-trophy text-primary fs-3 me-3"></i>
+                        <div>
+                            <h5 class="mb-1">Eficiência que Gera Resultados</h5>
+                            <p class="mb-0">Otimizamos processos, reduzimos custos e aumentamos a produtividade da sua
+                                empresa com soluções práticas e sob medida.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="d-flex mb-3">
+                        <i class="bi bi-map text-success fs-3 me-3"></i>
+                        <div>
+                            <h5 class="mb-1">Consultoria Estratégica e Operacional</h5>
+                            <p class="mb-0">Atuamos em todas as etapas da operação — do planejamento à execução —
+                                garantindo
+                                mais controle, desempenho e previsibilidade.</p>
+                        </div>
+                    </li>
+
+                    <li class="d-flex">
+                        <i class="bi bi-people text-warning fs-3 me-3"></i>
+                        <div>
+                            <h5 class="mb-1">Parceria que Transforma Negócios</h5>
+                            <p class="mb-0">Trabalhamos lado a lado com sua equipe, oferecendo suporte contínuo para
+                                alcançar resultados sustentáveis e duradouros.</p>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+
+
     </section>
 
-    <!-- Estatisticas -->
 
-    <section class="start id=start">
+
+
+
+    <section id="Lugares">
+
+
+    </section>
+
+
+
+    <!-- MAX WIDTH -- O - até o valor da Tabela  -->
+
+
+
+    <!-- Estatisticas -->
+    <section class="start texte-bg-dark id=start">
         <div class="container">
 
             <!-- Conteudo em linha/Horizontal -->
             <div class="row">
+
                 <!-- Coluna 1 Start 1 -->
-                <div class="col-lg-3">
+                <div class="col-lg-3 col-md-6">
+
+
+                    <!-- Conteudo -->
+                    <div class="start-item">
+
+                        <!-- Icone -->
+                        <i class="bi bi-bullseye"></i>
+                        <span data-purecounter-start="5" data-purecounter-end="3000" data-purecounter-duration="2"
+                            class="purecounter"></span>
+
+                        <p>
+                            <strong>Consultoria</strong>
+
+                            <span>Gestão Operacional</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Coluna 1 Stats 1 -->
+                <div class="col-lg-3 col-md-6">
+
+
+                    <!-- Conteudo -->
+                    <div class="start-item">
+
+                        <!-- Icone -->
+                        <i class="bi bi-rss fs-3 mb-3"></i>
+                        <span data-purecounter-start="5" data-purecounter-end="3000" data-purecounter-duration="2"
+                            class="purecounter"></span>
+
+                        <p>
+                            <strong>Consultoria</strong>
+
+                            <span>Gestão de Pessoas</span>
+                        </p>
+
+                    </div>
+                </div>
+
+
+                <!-- Coluna 1 Stats 1 -->
+                <div class="col-lg-3 col-md-6">
+
+
+                    <!-- Conteudo -->
+                    <div class="start-item">
+
+                        <!-- Icone -->
+                        <i class="bi bi-wrench-adjustable"></i>
+                        <span data-purecounter-start="5" data-purecounter-end="3000" data-purecounter-duration="2"
+                            class="purecounter"></span>
+
+                        <p>
+                            <strong>Consultoria</strong>
+
+                            <span>Juridica</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- Coluna 1 Stats 1 -->
+                <div class="col-lg-3 col-md-6">
 
 
                     <!-- Conteudo -->
@@ -93,101 +320,182 @@
                             class="purecounter"></span>
 
                         <p>
-                            <strong>Viagens</strong>
+                            <strong>Consultoria</strong>
 
-                            <span>Internacional</span>
-
-
-
-
+                            <span>Contabilidade</span>
                         </p>
 
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
-                <div class="col-lg-3">
+
+    <section class="servicos" id="servicos">
+
+        <div class="container text-center">
+
+            <!-- Titulo ou Subtitulo -->
+            <h2 class="badge rouder-pill text-bg-info"> Serviços</h2>
+            <div>
+                <span> Conheça os</span>
+                <span class="text-primary"> Serviços </span>
+            </div>
+
+        </div>
+
+        <div class="container">
+
+            <div class="row gy-4">
+
+
+
+
+                <!-- Coluna 1 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card card-body text-center shadow h-100">
+                        <i class="bi bi-suitcase-lg text-primary fs-1 mb-3"></i>
+
+                        <h4> Operações</h4>
+                        <p>Deixamos sua Operação Alinhada</p>
+
+                        <a href="#" class="stretched-link">
+
+                            <button type="button" class="btn btn-primary">Leia Mais</button>
+
+                        </a>
+
+
+                    </div>
                 </div>
-                <div class="col-lg-3"></div>
+
+                <!-- Coluna 2 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card card-body text-center shadow h-100">
+                        <i class="bi bi-suitcase-lg text-primary fs-1 mb-3"></i>
+
+                        <h4>Administrativa</h4>
+                        <p>
+                        <p>Deixamos sua equipe desblocatizada.</p>
+
+                        <a href="#" class="stretched-link">
+
+                            <button type="button" class="btn btn-primary">Leia Mais</button>
+
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Coluna 3 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card card-body text-center shadow h-100">
+                        <i class="bi bi-suitcase-lg text-primary fs-1 mb-3"></i>
+
+                        <h4>Juridica</h4>
+                        <p>
+                        <p>Fazemos consultorias Juridicas.</p>
+
+                        <a href="#" class="stretched-link">
+
+                            <button type="button" class="btn btn-primary">Leia Mais</button>
+
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Coluna 4 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card card-body text-center shadow h-100">
+                        <i class="bi bi-suitcase-lg text-primary fs-1 mb-3"></i>
+
+                        <h4>Contabilidade</h4>
+                        <p>
+                        <p>Deixamos sua empresa financeiramente equilibrada</p>
+
+                        <a href="#" class="stretched-link">
+
+                            <button type="button" class="btn btn-primary">Leia Mais</button>
+
+                        </a>
+
+                    </div>
+                </div>
+                <!-- Coluna 5 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card card-body text-center shadow h-100">
+                        <i class="bi bi-suitcase-lg text-primary fs-1 mb-3"></i>
+
+                        <h4>Pessoas</h4>
+                        <p>
+                        <p>Desenvolvemos sua equipe em alta performace</p>
+
+                        <a href="#" class="stretched-link">
+
+                            <button type="button" class="btn btn-primary">Leia Mais</button>
+
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Coluna 6 -->
+                <div class="col-lg-4 col-md-6 d-flex">
+                    <div class="card card-body text-center shadow h-100">
+                        <i class="bi bi-suitcase-lg text-primary fs-1 mb-3"></i>
+
+                        <h4>Suporte</h4>
+                        <p>
+                        <p>Daremos todo o suporte para sua empresa</p>
+
+                        <a href="#" class="stretched-link">
+
+                            <button type="button" class="btn btn-primary">Leia Mais</button>
+
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+
+    <!-- CTA Call to Action-->
+    <section class="cta" id="cta">
+
+        <!-- FUNDO CTA -->
+        <img src="/img/Log da empresa.png" alt="">
+
+
+        <!-- Texto para CTA -->
+        <div class="container">
+
+            <div class="row jutify-content-center">
+
+                <!-- Colunas Bootstrap -->
+                <div class="col-xl-10 text-center">
+                    <h3 class="text-ligth fw-bold"> MENSAGEM PARA DESTAQUE</h3>
+                    <p class="text-ligth"> Descrição sobre o tema / assunto </p>
+                    <a href="#" class="cta-btn">
+                        <i class="bi bi-whatsapp"> WhastApp
+
+                        </i>
+                    </a>
+                </div>
 
 
             </div>
-            <div class="col-lg-3"></div>
 
+        </div>
 
-
-            <section id="Lugares">
-
-            </section>
 
     </section>
 
 
 
-    <!-- MAX WIDTH -- O - até o valor da Tabela  -->
-    <div class="container">
-        <!-- Centralizar o Conteúdo  -->
-
-
-        <div class="row">
-
-
-            <div class="container text-center mt-7">
-                <h1>Acessoria aos Micros e Pequenas Empresas</h1>
-                <p class="lead">Ser reconhecida como referência nacional em assessoria operacional pela eficiência,
-                    inovação e comprometimento com os resultados de nossos clientes.</p>
-               
-
-            </div>
-
-            <!-- Estrutura Imagem -->
-            <div class="col-lg-5">
-                <img src="foto/businessman-1026415_1280.jpg" alt="homem forte, desenho artístico." loading="lazy"
-                    class="img-fluid">
-            </div>
-
-            <!-- Estruturas dos Textos / Descrição  -->
-            <div class="col-lg-7 coluna">
-                <h3>Sobre Nós</h3>
-                <p>
-                    A <strong>Andres Acessoria Operacional</strong> é uma empresa especializada em oferecer soluções estratégicas e
-                    práticas para otimizar processos, reduzir custos e aprimorar a eficiência operacional das
-                    organizações.
-                    Com uma equipe experiente e multidisciplinar, atuamos lado a lado com nossos clientes para
-                    transformar desafios em resultados sustentáveis.
-
-                    Nosso propósito é tornar as operações corporativas mais inteligentes, ágeis e rentáveis, ajudando
-                    empresas de diferentes segmentos a alcançar a excelência operacional.
-
-                </p>
-
-                <p class="mb-0">
-                    <em>
-                        Apoiar empresas na melhoria contínua de seus processos operacionais, garantindo maior
-                        produtividade, controle e rentabilidade.
-                    </em>
-                </p>
-            </div>
-
-            <ul class="list-unstyled mt-4">
-                <li class="d-flex mb-3">
-
-
-                    <!-- Display Row Linha -->
-                    <i class="bi bi-globe-americas text-primary fs -3">
-
-                    </i>
-                <li>
-
-                    <i class="bi bi-pc-display-horizontal"></i> computador escritorio
-
-                </li>
-
-                <li></li>
-                <li></li>
-            </ul>
-
-
-        </div>
 
 
 
@@ -196,21 +504,18 @@
 
 
 
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
 
 
-        <!-- Bootstrap js -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
-
-
-
-        <!-- Contator Start -->
-        <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-        <script>
-            new PureCounter();
-        </script>
+    <!-- Contator Start -->
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+    <script>
+        new PureCounter();
+    </script>
 
 
 
