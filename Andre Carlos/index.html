@@ -9,12 +9,29 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    
 
 <!-- Bootstrap Icons -->
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+<!-- G LightBox css -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+
+<!-- aos css Animação-->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+
+
+
+
 
 
 <body>
@@ -63,71 +80,88 @@
 
     <section id="hero" class="hero">
 
-
-        
-
         <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
             <!-- SLIDE 1 / FOTO 1 -->
             <div class="carousel-item active text-center">
 
-                <img src="/img/hero/slide 1.jpg" alt="">
+                <img src="img/hero/slide1.jpg" alt="">
 
-                <div class="carousel-conteiner">
-                    <h2> Soluções inteligentes para decisões melhores </h2>
-                    <p>
+                <div class="carousel-container">
+                    <h2 data-aos="fade-down"> Soluções inteligentes para decisões melhores </h2>
+                    <p data-aos="fade-down" data-aos-delay="300">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta accusantium repudiandae optio
                         illum dolor. Doloribus laboriosam consequatur tempora debitis vel provident eos ex aliquid
                         eveniet voluptate, cum iste atque eaque?
                     </p>
 
                 </div>
+            </div>
 
-                <!-- SLIDE 2 -->
-                <div class="carousel-item text-center">
-                    <img src="img/hero/slide 2.jpg" alt="Negocios em equipe">
-                    <div class="carousel-conteiner">
-                        <h2> Mente em Ação </h2>
-                        <P>
-                        </P>
+            <!-- SLIDE 2 -->
+            <div class="carousel-item text-center">
+                <img src="img/hero/slide2.jpg" alt="Negocios em equipe">
 
-                    </div>
+                <div class="carousel-conteiner">
+                    <h2>Mente em Ação</h2>
+                    <P>
+                        Viva a magia dos negocios
+                    </P>
 
-                    <!-- SLIDE 3 -->
-                    <div class="carousel-item text-center">
-                        <img src="img/hero/slide 2.jpg" alt="Negocios em equipe">
-                        <div class="carousel-conteiner">
-                            <h2> Mente em Ação </h2>
-                            <P>
-                            </P>
+                </div>
+            </div>
 
-                            <div>
+            <!-- SLIDE 3 -->
+            <div class="carousel-item text-center">
+                <img src="img/hero/slide3.jpg" alt="Negocios em equipe">
+                <div class="carousel-conteiner">
+                    <h2> Mente em Ação </h2>
+                    <P> Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur iure perferendis</P>
 
-                            </div>
+                </div>
 
-                            <!-- Botoes de navegação -->
-                            <!-- Voltar -->
+            </div>
 
-                            <a href="#hero-carousel" role="button" class="carousel-control-prev">
-                                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-                            </a>
+            <!-- Botoes de navegação -->
+            <!-- Voltar -->
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+                <span class="visually-hidden"> Anterior </span>
+            </button>
+
+            <!-- Avançar -->
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+                <span class="visually-hidden"> Proximo </span>
+
+            </button>
+
+            <div class="carousel-indicators">
+
+                <!-- Um potao para Cada Imagem do Slide -->
+                <!-- Slide 1 -->
+                <button class="active" type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0"
+                    aria-current="true" aria-label="Slide 1">
+                </button>
 
 
-                            <a href="#hero-carousel" role="button" class="carousel-control-prev">
-                                <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-                            </a>
-                            </a>
+                <!-- Slide 2 -->
 
-                            <ol class="carousel-indicators">
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2">
+                </button>
 
-                            </ol>
+
+                <!-- Slide 3 -->
+
+                <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3">  </button>
+
+            </div>
+        </div>
 
     </section>
 
     <!-- Todas as Seçoes -->
-
-
-
 
 
 
@@ -496,12 +530,14 @@
 
 
 
+<!-- AOS JS -->
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 
 
-
-
+<!-- G LightBox JS -->
+<script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
 
     <!-- Bootstrap js -->
@@ -515,8 +551,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script>
         new PureCounter();
+        AOS.init();
     </script>
-
 
 
 
