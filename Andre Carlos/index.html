@@ -567,9 +567,10 @@
 
 
                     <li data-defaut-filter="*" class="filter-active"> Todos </li>
-                    <li data-defaut-filter="">America do Norte</li>
-                    <li data-defaut-filter=""> Europra</li>
-                    <li data-defaut-filter=""> Parque Tematico</li>
+                    <li data-defaut-filter="">Operação</li>
+                    <li data-defaut-filter=""> Auditoria</li>
+                    <li data-defaut-filter=""> Administração</li>
+                    <li data-defaut-filter=""> RH</li>
                 </ul>
 
 
@@ -577,24 +578,38 @@
                 <div class="row g-0 isotope-container">
 
                     <!-- Fotos 1 Colunas Bootstrap  -->
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        FOTO 1
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
+
+                        <div class="portfolio-content">
+                            <img src="img/Galeria/fotomulher.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+
+                                <!-- Link Foto -->
+                                <a href="img/Galeria/fotomulher.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+
+
+                            </div>
+                        </div>
 
                     </div>
 
- <!-- Fotos 2 Colunas Bootstrap  -->
+                    <!-- Fotos 2 Colunas Bootstrap  -->
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         FOTO 2
 
                     </div>
 
- <!-- Fotos 3 Colunas Bootstrap  -->
+                    <!-- Fotos 3 Colunas Bootstrap  -->
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         FOTO 3
 
                     </div>
 
-<!-- Fotos 4 Colunas Bootstrap  -->
+                    <!-- Fotos 4 Colunas Bootstrap  -->
                     <div class="col-xl-3 col-lg-4 col-md-6">
                         FOTO 4
 
@@ -642,7 +657,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
     <script>
         new PureCounter();
-        AOS.init();
+        AOS.init(
+        { duration:1200 }
+        
+        );
+
+        const lightbox = GLightbox();
+
     </script>
 
 
