@@ -537,10 +537,11 @@
         <!-- Titulo da Seção -->
         <div class="container text-center">
 
-
             <!-- Titulo ou Subtitulo -->
             <h2 class="badge rouder-pill text-bg-info"> Serviços</h2>
-            <div>
+
+            <div class="fs-3">
+                
                 <span> Conheça os</span>
                 <span class="text-primary"> Serviços </span>
             </div>
@@ -549,15 +550,14 @@
 
 
         <!-- Estrura da Galeria -->
-        <div class="">
-
+        <div class="container-fluid">
 
 
 
             <!-- ISOTOPE Mansory-->
 
             <!-- Filtro -->
-            <div class="isotope-layout" data-defaut-filter="*" data-layout="masonry">
+            <div class="isotope-layout" data-defaut-filter="*" data-layout="masonry" data-sort="original-orde">
 
 
                 <!-- Botoes do Filtro -->
@@ -567,18 +567,18 @@
 
 
                     <li data-defaut-filter="*" class="filter-active"> Todos </li>
-                    <li data-defaut-filter="">Operação</li>
-                    <li data-defaut-filter=""> Auditoria</li>
-                    <li data-defaut-filter=""> Administração</li>
-                    <li data-defaut-filter=""> RH</li>
+                    <li data-defaut-filter=".filter-op">Operação</li>
+                    <li data-defaut-filter=".filter-audt"> Auditoria</li>
+                    <li data-defaut-filter=".filter-adm"> Administração</li>
+                    <li data-defaut-filter="filter-rh"> Gestão de Pessoa</li>
                 </ul>
 
 
                 <!-- Galeria da Horizontal -->
-                <div class="row g-0 isotope-container">
+                <div class="row g-0 isotope-container masonry-grid">
 
                     <!-- Fotos 1 Colunas Bootstrap  -->
-                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item">
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-op">
 
                         <div class="portfolio-content">
                             <img src="img/Galeria/fotomulher.jpg" alt="" class="img-fluid">
@@ -598,33 +598,153 @@
                     </div>
 
                     <!-- Fotos 2 Colunas Bootstrap  -->
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        FOTO 2
+                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-audt">
+
+                        <div class="portfolio-content">
+                            <img src="img/Galeria/fotomulheres.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+
+                                <!-- Link Foto -->
+                                <a href="img/Galeria/fotomulheres.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+
+
+                            </div>
+                        </div>
 
                     </div>
 
                     <!-- Fotos 3 Colunas Bootstrap  -->
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        FOTO 3
+                    <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-adm">
+
+                        <div class="portfolio-content">
+                            <img src="img/Galeria/cafe.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+
+                                <!-- Link Foto -->
+                                <a href="img/Galeria/cafe.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+
+
+                            </div>
+                        </div>
 
                     </div>
 
                     <!-- Fotos 4 Colunas Bootstrap  -->
-                    <div class="col-xl-3 col-lg-4 col-md-6">
-                        FOTO 4
+                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-rh">
+
+                        <div class="portfolio-content">
+                            <img src="img/Galeria/hospital.png" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+
+                                <!-- Link Foto -->
+                                <a href="img/Galeria/hospital.png" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
 
                     </div>
 
+ <!-- Fotos 5 Colunas Bootstrap  -->
+                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-adm">
 
+                        <div class="portfolio-content">
+                            <img src="img/Galeria/painel1.jpg" alt="" class="img-fluid">
 
-                </div>
+                            <div class="portfolio-info">
 
+                                <!-- Link Foto -->
+                                <a href="img/Galeria/painel1.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
 
-            </div>
+                            </div>
+                        </div>
 
+                    </div>
 
+ <!-- Fotos 6 Colunas Bootstrap  -->
+                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-audt">
 
-        </div>
+                        <div class="portfolio-content">
+                            <img src="img/Galeria/painel2.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+
+                                <!-- Link Foto -->
+                                <a href="img/Galeria/painel2.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+ <!-- Fotos 7 Colunas Bootstrap  -->
+                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-op">
+
+                        <div class="portfolio-content">
+                            <img src="img/Galeria/painel3.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+
+                                <!-- Link Foto -->
+                                <a href="img/Galeria/painel3.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+ <!-- Fotos 8 Colunas Bootstrap  -->
+                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-rh">
+
+                        <div class="portfolio-content">
+                            <img src="img/Galeria/painel4.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+
+                                <!-- Link Foto -->
+                                <a href="img/Galeria/painel4.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+ <!-- Fotos 9 Colunas Bootstrap  -->
+                     <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item filter-adm">
+
+                        <div class="portfolio-content">
+                            <img src="img/Galeria/predio.jpg" alt="" class="img-fluid">
+
+                            <div class="portfolio-info">
+
+                                <!-- Link Foto -->
+                                <a href="img/Galeria/predio.jpg" class="glightbox preview-link">
+                                    <i class="bi bi-zoom-in"></i>
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
 
 
     </section>
@@ -632,17 +752,17 @@
 
 
 
-    <!-- isotope -->
+    <!-- isotope Filtro-->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
 
 
-    <!-- AOS JS -->
+    <!-- AOS JS Animação Fade-in-->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 
 
-    <!-- G LightBox JS -->
+    <!-- G LightBox JS Galeria -->
     <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
 
 
@@ -653,16 +773,53 @@
 
 
 
-    <!-- Contator Start -->
+    <!-- Contator Estatisticas -->
     <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-    <script>
+
+   <!--  /* Mansory Grid para Galeria */ -->
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+
+<!-- /* ImagesLoaded ( recomendado para esperar as imagens) */
+ --><script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+
+
+ <!-- JavaScrip -->
+<script>
+
+//Iniciar o PureCounter //
+
+
         new PureCounter();
         AOS.init(
         { duration:1200 }
         
         );
 
+// Galeria ---- G LightBox //
         const lightbox = GLightbox();
+
+// Masonry Grid
+document.addEventListener('DOMContentLoaded', function(){
+    // constate = fixo
+
+    //Selector pegar / buscar Class
+    const grid = document.querySelector('.masonry-grid');
+
+    imagesLoaded(grid, function () {
+        new Masonry(grid, {
+itemSelecton: '.portfolio-item',
+percentPosition: true,
+horizontalorder: true, 
+gutter: 0
+        });
+    });
+
+
+
+
+});
+
 
     </script>
 
