@@ -756,7 +756,7 @@
 
     </section>
 
-    <section class="contato" id="contato">
+    <section class="contato pt-5 mb-3" id="contato">
         <div class="container text-center" data-aos="">
 
             <h2 class="badge rounded-pill text-bg-info"> Contato </h2>
@@ -776,13 +776,26 @@
                     <div class="row gy-4">
 
                         <!-- Quadrado 1 -->
+                        <!-- eNDEREÇO -->
                         <div class="col-md-6">
-                            INFO 1
+                            <div class="info-item">
+                                <i class="bi bi-geo-alt"></i>
+                                <h3> Endereço </h3>
+
+                            </div>
+
+
                         </div>
 
                         <!-- Quadrado 2 -->
+                        <!-- Telefone -->
                         <div class="col-md-6">
-                            INFO 2
+                            <div class="info-item">
+                                <i class="bi bi-whatsapp"></i>
+                                <h3> WhastApp</h3>
+                                <span>(11)</span>
+                                <p>(11)</p>
+                            </div>
                         </div>
 
                         <!-- Quadrado 3 -->
@@ -802,7 +815,7 @@
                 <!-- Direita Formulario -->
                 <div class="col-lg-6">
 
-                    <form action="" method="post">
+                    <form action="https://formspree.io/f/xeoyzkjg" method="post" class="form-contato">
                         <div class="row gy-4">
 
                             <!-- Campo Nome -->
@@ -814,22 +827,33 @@
                             <!-- Campo Email-->
                             <div class="col-md-6">
                                 <label for="nome"> Email *</label>
-                               <input type="email" name="email" id="email" required>
+                                <input type="email" name="email" id="email" required>
                             </div>
 
-<!-- Campo Telefone / Whastsapp -->
+                            <!-- Campo Telefone / Whastsapp -->
                             <div class="col-md-6">
                                 <label for="telefone"> WhastApp *</label>
                                 <input type="tel" name="telefone" id="telefone">
                             </div>
 
-<!-- Campo Assunto -->
+                            <!-- Campo Assunto -->
                             <div class="col-md-6">
                                 <label for="telefone"> Assunto *</label>
-                                <input type="text" name="assunto" id="assunto"
-                                 required>
+                                <input type="text" name="assunto" id="assunto" required>
                             </div>
 
+                            <!-- Campo de Mensagem  -->
+                            <div class="col-12">
+                                <textarea name="mensagem" id="mensagem" rows="6" required></textarea>
+
+                            </div>
+
+                            <!-- Botão Enviar -->
+                            <div class="col-12 text-center">
+                                <button type="submit">
+                                    Enviar
+                                </button>
+                            </div>
 
 
 
@@ -927,6 +951,60 @@
         new bootstrap.ScrollSpy(document.body, {
             target: "#navbarNav",
         });
+
+        // Máscara do telefone
+        const telefoneInput = document.getElementById("telefone");
+
+        if (telefoneInput) {
+            telefoneInput.addEventListener("input", (e) => {
+                let input = e.target.value.replace(/\D/g, "");
+                if (input.length > 11) input = input.slice(0, 11);
+
+                let formatted = "";
+                if (input.length > 0) formatted += "(" + input.slice(0, 2);
+                if (input.length >= 3) formatted += ") " + input.slice(2, 7);
+                if (input.length >= 8) formatted += "-" + input.slice(7, 11);
+
+                e.target.value = formatted;
+            });
+        }
+
+        // Validação e envio do formulário com limpeza
+        const form = document.querySelector(".form-contato");
+
+        if (form) {
+            form.addEventListener("submit", async function (event) {
+                event.preventDefault(); // Impede a atualização da página
+
+                const telefoneValor = telefoneInput?.value.replace(/\D/g, "");
+                if (!telefoneValor || telefoneValor.length !== 11) {
+                    alert("Por favor, insira um telefone válido com 11 dígitos.");
+                    telefoneInput?.focus();
+                    return;
+                }
+
+                const formData = new FormData(form);
+                const action = form.getAttribute("action");
+
+                try {
+                    const response = await fetch(action, {
+                        method: "POST",
+                        body: formData,
+                        headers: { "Accept": "application/json" }
+                    });
+
+                    if (response.ok) {
+                        alert("Mensagem enviada com sucesso!");
+                        form.reset();
+                    } else {
+                        alert("Erro ao enviar a mensagem. Tente novamente.");
+                    }
+
+                } catch (error) {
+                    alert("Erro de conexão. Verifique sua internet.");
+                }
+            });
+        }
 
 
     </script>
